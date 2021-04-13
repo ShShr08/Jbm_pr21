@@ -14,18 +14,17 @@ function setup(){
 
     block1 = createSprite(100,580,190,30);
     block1.shapeColor = rgb(0,0,255);
-
-   var block2 = createSprite(300,580,190,30);
-   block2.shapeColor= "red";
-   var block3 = createSprite(500,580,190,30);
-   block3.shapeColor = "yellow";
-   var block4 = createSprite(700,580,190,30);
-   block4.shapeColor = "green";
+    block2 = createSprite(300,580,190,30);
+    block2.shapeColor= "red";
+    block3 = createSprite(500,580,190,30);
+    block3.shapeColor = "yellow";
+    block4 = createSprite(700,580,190,30);
+    block4.shapeColor = "green";
      
     ball = createSprite(random(20,750),random(0,400),40,40);
     ball.shapeColor = rgb(255,255,255);
 
-    random_movement = random(1,2);
+    random_movement = Math.round(random(1,2));
 
     if(random_movement = 1){
         ball.velocityX = 4;
@@ -37,7 +36,7 @@ function setup(){
     }
     
     fill("black");
-    text("credit to Uzma :)",750,550);
+    
 }
 
 function draw() {
